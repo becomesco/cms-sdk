@@ -1,0 +1,45 @@
+{
+  "name": "@becomes/cms-sdk",
+  "version": "1.0.0",
+  "description": "SDK for client side of BCMS",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "typedoc-generate": "typedoc",
+    "build:ts": "tsc -p .",
+    "build": "node tools.js --build",
+    "bundle": "node tools.js --bundle",
+    "publish": "node tools.js --publish",
+    "link": "node tools.js --link",
+    "unlink": "node tools.js --unlink",
+    "test": "mocha -r ts-node/register test/*.test.ts --recursive --exit",
+    "test:active": "mocha -r ts-node/register test/*.test.active.ts --recursive --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "socket.io-client": "^2.3.0",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/chai": "^4.2.12",
+    "@types/form-data": "^2.5.0",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^12.12.24",
+    "@types/socket.io-client": "^1.4.33",
+    "@types/uuid": "^3.4.9",
+    "chai": "^4.2.0",
+    "env-cmd": "^10.0.1",
+    "form-data": "^3.0.0",
+    "fs-extra": "^9.0.0",
+    "mocha": "^8.1.1",
+    "ts-node": "^8.6.1",
+    "tslint": "^5.20.1",
+    "typedoc": "^0.15.8",
+    "typedoc-neo-theme": "^1.0.9",
+    "typescript": "^3.7.4"
+  }
+}
